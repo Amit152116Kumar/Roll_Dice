@@ -1,4 +1,4 @@
-package com.example.rolldice
+    package com.example.rolldice
 
 import android.animation.Animator
 import android.graphics.drawable.Animatable
@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme2)
         setContentView(R.layout.activity_main)
 
         dice1.addAnimatorListener(object : Animator.AnimatorListener{
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             override fun onAnimationEnd(animator: Animator) {
-                buttonenable()
+                button_enable()
             }
             override fun onAnimationCancel(p0: Animator?) {
             }
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             override fun onAnimationEnd(animator: Animator) {
-                buttonenable()
+                button_enable()
             }
             override fun onAnimationCancel(p0: Animator?) {
             }
@@ -41,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             override fun onAnimationEnd(animator: Animator) {
-                buttonenable()
+                button_enable()
             }
             override fun onAnimationCancel(p0: Animator?) {
             }
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onAnimationStart(animator: Animator) {
                 }
                 override fun onAnimationEnd(animator: Animator) {
-                    buttonenable()
+                    button_enable()
                 }
                 override fun onAnimationCancel(p0: Animator?) {
                 }
@@ -64,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             override fun onAnimationStart(animator: Animator) {
             }
             override fun onAnimationEnd(animator: Animator) {
-                buttonenable()
+                button_enable()
             }
             override fun onAnimationCancel(p0: Animator?) {
             }
@@ -75,7 +76,7 @@ class MainActivity : AppCompatActivity() {
             override fun onAnimationStart(animator: Animator) {
             }
             override fun onAnimationEnd(animator: Animator) {
-                buttonenable()
+                button_enable()
             }
             override fun onAnimationCancel(p0: Animator?) {
             }
@@ -143,7 +144,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun buttonenable()
+    private fun button_enable()
     {
 
         button.isEnabled = true
